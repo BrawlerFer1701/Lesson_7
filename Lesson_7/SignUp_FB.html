@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style type="text/css">
+	   	
+    	h1, p, span{
+    		margin-bottom: 0;
+    		margin-left: 15px;
+    	}
+    	p, span, label{
+    		font-size: 13px;
+    		color: #B2AEAE;
+    	}
+    	a{
+    		text-decoration: none;
+    	}
+    	input{   		
+    		height: 35px;
+    		border: 1px solid #E3D0D0;
+    		border-radius: 5px;
+    		margin: 10px;
+    		padding-left: 10px;
+    	}
+    	input[type=password]{
+    		background-color: #F7E6FA;
+    	}
+    	input[type=radio], label{
+    		/*float: right;*/
+    		height: auto;
+    	}
+    	label{
+    		
+    		margin-right: 15px;
+    	}
+    	input[type=number]{
+    		width: 105px;
+    		margin: 0px 0px 10px 0px;
+    	}
+    	input[type=text]{
+    		width: 160px;
+    		background-color: #F7E6FA;
+    	}
+    	div{
+    		display: inline-block;
+    		border: 1px solid #E3D0D0; 
+    		height: 35px; 
+    		width: 100px;
+    		border-radius: 5px;
+    	}
+    </style>
+</head>
+
+<body style="text-align: left; width: 400px; border: solid 1px #E1D9D9; border-radius: 5px; font-family: sans-serif; position: relative; left: 100px;">
+    <form action="">
+	    <h1 style="margin-bottom: 5px;">Đăng ký</h1>
+	    <span>Nhanh chóng và dễ dàng</span><br><br>
+	    <hr style="width: 100%;">
+    
+        <input type="text" placeholder="Họ" required="" width="150">
+        <input type="text" placeholder="Tên" required="" width="150"> <br>
+        <input type="text" placeholder="Số di động hoặc email" style="width: 355px;"><br>
+        <input type="password" placeholder="Mật khẩu mới" style="width: 355px;"><br>
+        <span>Ngày sinh</span><br>
+        <input type="number" min="0" max="31" value="14" style="margin-left: 15px;">
+        <input type="number" min="1" max="12" placeholder="Tháng 5">
+        <input type="number" min="1900" max="2021" value="2021"><br>
+        <span>Giới tính</span><br>
+        <div style="margin-left: 15px;"><label for="Nữ">Nữ</label><input type="radio" name="gd" id="Nữ"></div>
+        <div><label for="Nam">Nam</label><input type="radio" name="gd" id="Nam"></div>
+        <div style="width: 120px;"><label for="Tùy chỉnh">Tùy chỉnh</label><input type="radio" name="gd" id="Tùy chỉnh"></div>
+   
+    	<p style="margin:15px 10px; text-align: justify; font-size: 12px;">Bằng cách nhấp vào Đăng ký, bạn đồng ý với <a href="#">Điều khoản</a>, <a href="#">Chính sách dữ liệu</a> và <a href="#">Chính sách cookie</a> của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhân bất kỳ lúc nào</p>
+  
+    	<input type="submit" value="Đăng ký" style=" width: 150px; background-color:#29A220; color: #FFF; font-size: 20px; font-weight: bold; border: none; border-radius: 5px; margin-left:125px; margin-bottom: 20px;">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Market Research Survey</title>
+</head>
+<body style="font-family: sans-serif;">
+
+	<div style="border-bottom: 1px dotted;">
+		<h2 style="font-weight: lighter; margin-bottom: none;">Market Research Survey</h2>
+		<p style="font-size: 9px; color: #555555; margin-top: none;">Please take a few moments to complete this satisfaction survey.</p>	
+	</div>
+
+	<form action="">
+		<p style="font-size: 12px; color: #222222; font-weight: bold;">What is your age range</p>
+		<select name="age" id="" style="font-size: 15px; width: 360px; height: 24px;">
+			<option value="">18-24</option>
+			<option value="">25-34</option>
+			<option value="">35-50</option>
+			<option value="">50+</option>
+		</select><br>
+
+		<p style="font-size: 12px; color: #222222; font-weight: bold;">What is your yearly income range?</p>
+		<select name="income" id="" style="font-size: 15px; width: 360px; height: 24px;">
+			<option value="">$0-$25,000</option>
+			<option value="">$25,001-$50,000</option>
+			<option value="">$50,001-$100,000</option>
+			<option value="">$100,000+</option>
+		</select><br>
+
+		<p style="font-size: 12px; color: #222222; font-weight: bold;">Gender</p>
+		<input type="radio" name="gd" id="male" style="margin-right: 10px;"><label for="male"><span style="font-size: 12px;">Male</span></label><br>
+		<input type="radio" name="gd" id="fem" style="margin-right: 10px;"><label for="fem"><span style="font-size: 12px;">Female</span></label><br>
+		<input type="radio" name="gd" id="nonbi" style="margin-right: 10px;"><label for="nonbi"><span style="font-size: 12px;">Nonbinary</span></label><br>
+		<input type="radio" name="gd" id="other" style="margin-right: 10px;"><label for="other"><span style="font-size: 12px;">Other</span></label><br>
+		
+		<textarea name="gd" id="" cols="50" rows="5" style="overflow: hidden; width: 150px; height: 18px; margin-left: 15px;"></textarea>
+
+		<p style="font-size: 12px; color: #222222; font-weight: bold;">Which of the following products have your purchased in the last 2 months. Please check all all that apply.</p>
+		<input type="checkbox" style="margin-right: 10px;" id="pr1"><label for="pr1"><span style="font-size: 12px;"> Product 1</span></label><br>
+		<input type="checkbox" style="margin-right: 10px;" id="pr1"><label for="pr2"><span style="font-size: 12px;"> Product 2</span></label><br>
+		<input type="checkbox" style="margin-right: 10px;" id="pr1"><label for="pr3"><span style="font-size: 12px;"> Product 3</span></label><br>
+
+		<p style="font-size: 12px; color: #222222; font-weight: bold;">How often would you use our new product</p>
+		<input type="radio" name="freq">Daily
+		<input type="radio" name="freq">Weekly
+		<input type="radio" name="freq">Monthly
+
+		<p style="font-size: 12px; color: #222222; font-weight: bold;">What would you pay for the new product?</p>
+		$ <input type="text" style="width: 50px;">.<input type="text" style="width: 30px;"><br>
+		<span style="font-size: 12px; color: #222222; margin-left: 12px; margin-right: 22px;">Dollars</span> <span style="font-size: 12px; color: #222222;">Cens</span>
+
+		<p style="font-size: 12px; color: #222222; font-weight: bold;">What features would you like to see in the new product</p>
+		<textarea name="" id="" cols="60" rows="4"></textarea>
+
+		<p style="font-size: 12px; color: #222222; font-weight: bold;">Please rate your level of agreement with the following statements.</p>
+
+		<table border="1" style="border-collapse: collapse; width: 750px; font-size: 12px;">
+			<tr style="text-align: center; background-color: #BAB7B7; height: 45px;">
+				<td style="width: 40%;"></td>
+				<td style="width: 15%;">Strongly Disagree</td>
+				<td style="width: 15%;">Disagree</td>
+				<td style="width: 15%;">Agree</td>
+				<td style="width: 15%;">Strongly Agree</td>
+			</tr>
+			<tr style="height: 45px;">
+				<td style="text-align: left; font-weight: bold;">Our products are priced fairly.</td>
+				<td style="text-align: center;"><input type="radio" name="num"><br>1</td>
+				<td style="text-align: center;"><input type="radio" name="num"><br>2</td>
+				<td style="text-align: center;"><input type="radio" name="num"><br>3</td>
+				<td style="text-align: center;"><input type="radio" name="num"><br>4</td>
+			</tr>
+			<tr style="background-color: #E4D1E3; height: 45px;">
+				<td style="text-align: left; font-weight: bold;">Our products are high quality.</td>
+				<td style="text-align: center;"><input type="radio" name="num1"><br>1</td>
+				<td style="text-align: center;"><input type="radio" name="num1"><br>2</td>
+				<td style="text-align: center;"><input type="radio" name="num1"><br>3</td>
+				<td style="text-align: center;"><input type="radio" name="num1"><br>4</td>
+			</tr>
+			<tr style="height: 45px;">
+				<td style="text-align: left; font-weight: bold;">You would recommend our product to a friend or coworker.</td>
+				<td style="text-align: center;"><input type="radio" name="num2"><br>1</td>
+				<td style="text-align: center;"><input type="radio" name="num2"><br>2</td>
+				<td style="text-align: center;"><input type="radio" name="num2"><br>3</td>
+				<td style="text-align: center;"><input type="radio" name="num2"><br>4</td>
+			</tr>
+		</table>
+		<input type="submit" value="Submit" style="margin-top: 20px; font-weight: bold;">
+	</form>	
+</body>
+</html>
